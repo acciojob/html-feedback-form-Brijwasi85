@@ -8,7 +8,7 @@
 
     <h1>Feedback Form</h1>
 
-    <form>
+    <form method="post">
 
         <!-- Name -->
         <label for="name">Name:</label>
@@ -22,14 +22,15 @@
 
         <!-- Favorite Color -->
         <label for="favColor">Favorite Color:</label>
-        <input type="color" id="favColor" name="favColor">
+        <input type="color" id="favColor" name="favColor" required>
         <br><br>
 
         <!-- Likeness Range -->
         <label for="likeness">Likeness:</label>
-        <input type="range" id="likeness" name="likeness" min="1" max="100">
+        <input type="range" id="likeness" name="likeness" min="1" max="100" value="50" required>
         <br><br>
 
+        <!-- Submit Button -->
         <button type="submit">Submit</button>
 
     </form>
